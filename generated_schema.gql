@@ -3,10 +3,11 @@
 # ------------------------------------------------------
 
 type Pokemon {
-  id: ID!
-  name: String!
+  name: String
+  url: String
 }
 
 type Query {
-  pokemon: Pokemon!
+  pokemon: [Pokemon!]!
+  singlePokemon: Pokemon!
 }
